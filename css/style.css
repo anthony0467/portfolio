@@ -1,0 +1,182 @@
+ @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,400;0,700;0,900;1,400&display=swap');
+ /********************************RESET********************************/
+ * {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/**************************************************************** GENERAL********************************/
+
+h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 30px;
+    padding: 1rem 0;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 25px;
+    padding: 1rem 0;
+}
+
+.center{
+    text-align: center;
+}
+/******************************** PRESENTATION ********************************/
+
+#presentation{
+  min-height: 700px;
+  background-color: rgb(235, 19, 19);
+  position: relative;
+}
+
+.parallax-bg {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 130%;
+      height: 100%;
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+    }
+ 
+ /******************************** CARROUSEL ********************************/
+ 
+ html,
+    #carrousel{
+      position: relative;
+      background-color: black;
+    }
+
+    body {
+      background: #363131;
+      font-family: 'Kanit', sans-serif;
+      font-size: 16px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 96vh;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img, video {
+      display: block;
+      width: 100%;
+      height: 96vh;
+      object-fit: cover;
+      max-width: 50%;
+    }
+
+    .card-slide{
+        max-height: 96vh;
+
+    }
+
+    .text-card-slide{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    /***************FLEX**********/
+
+    .flex{
+        display: flex;
+    }
+
+    .row{
+        flex-direction: row;
+    }
+
+    .row-reverse{
+        flex-direction: row-reverse;
+    }
+
+    swiper-slide{
+      height: 96vh;
+    }
+
+    swiper-slide:nth-child(1n) {
+      background-color: rgb(206, 17, 17);
+    }
+
+    swiper-slide:nth-child(2n) {
+      background-color: rgb(0, 140, 255);
+    }
+
+    swiper-slide:nth-child(3n) {
+      background-color: rgb(10, 184, 111);
+    }
+
+    swiper-slide:nth-child(4n) {
+      background-color: rgb(211, 122, 7);
+    }
+
+    swiper-slide:nth-child(5n) {
+      background-color: rgb(118, 163, 12);
+    }
+
+    swiper-slide:nth-child(6n) {
+      background-color: rgb(180, 10, 47);
+    }
+
+    swiper-slide:nth-child(7n) {
+      background-color: rgb(35, 99, 19);
+    }
+
+    swiper-slide:nth-child(8n) {
+      background-color: rgb(0, 68, 255);
+    }
+
+    swiper-slide:nth-child(9n) {
+      background-color: rgb(218, 12, 218);
+    }
+
+    swiper-slide:nth-child(10n) {
+      background-color: rgb(54, 94, 77);
+    }
