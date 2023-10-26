@@ -249,7 +249,7 @@ object-fit: cover;
 
     swiper-slide:nth-child(2n) {
       background-color: #0000006b;
-      background-image: url("/img/ordiMan.jpg");
+      background-image: url("../img/ordiMan.jpg");
       background-blend-mode: multiply;
       
     }
