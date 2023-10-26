@@ -37,6 +37,11 @@ swiper-container{
   touch-action: pan-x;
 }
 
+swiper-slide{
+  position: relative;
+}
+
+
 article{
   line-height: 1.5;
 }
@@ -67,6 +72,18 @@ a{
 .center{
     text-align: center;
 }
+
+.btn-page{
+    background-color: #fff;
+    color: #000;
+    font-style: italic;
+    padding: 0.5rem;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    z-index: 99;
+}
 /******************************** PRESENTATION ********************************/
 
 .card-presentation{
@@ -79,6 +96,10 @@ a{
   color: #000;
 }
 
+.card-presentation h1{
+  padding: .5rem 0;
+}
+
 .card-presentation figcaption{
   flex-grow: 1;
   padding: 0 1rem;
@@ -86,6 +107,26 @@ a{
 
 .name{
   font-weight: 400;
+}
+
+.scroll{
+  display: none;
+}
+
+.blink {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 /******************************** COMPETENCES ********************************/
@@ -297,6 +338,12 @@ object-fit: cover;
     /****************************************************************MEDIA QUERIES********************************/
 
     @media only screen and (max-width: 1180px) {
+      .scroll{
+        display: block;
+        position: absolute;
+        right: 7px;
+        bottom: 10px;
+      }
     .card-presentation figcaption{
       position: absolute;
       top: 39%;
