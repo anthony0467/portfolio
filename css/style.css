@@ -32,6 +32,11 @@ table {
 	border-spacing: 0;
 }
 
+swiper-container{
+  overflow-x: scroll;
+  touch-action: pan-x;
+}
+
 article{
   line-height: 1.5;
 }
